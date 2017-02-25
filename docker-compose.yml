@@ -9,19 +9,19 @@ portal:
    - tomcatTwo:tomcat2
    - tomcatThree:tomcat3
 tomcatOne:
-  image: tomcat
+  image: tomcat:8.5.11-jre8-alpine
   volumes:
    - /home/ramki/cluster/server.xml:/usr/local/tomcat/conf/server.xml
    - /home/ramki/cluster/ROOT:/usr/local/tomcat/webapps/ROOT
    - /home/ramki/cluster/tomcat-users.xml:/usr/local/tomcat/conf/tomcat-users.xml
 tomcatTwo:
-  image: tomcat
+  image: tomcat:8.5.11-jre8-alpine
   volumes:
    - /home/ramki/cluster/server.xml:/usr/local/tomcat/conf/server.xml
    - /home/ramki/cluster/ROOT:/usr/local/tomcat/webapps/ROOT
    - /home/ramki/cluster/tomcat-users.xml:/usr/local/tomcat/conf/tomcat-users.xml
 tomcatThree:
-  image: tomcat
+  image: tomcat:8.5.11-jre8-alpine
   volumes:
    - /home/ramki/cluster/server.xml:/usr/local/tomcat/conf/server.xml
    - /home/ramki/cluster/ROOT:/usr/local/tomcat/webapps/ROOT
